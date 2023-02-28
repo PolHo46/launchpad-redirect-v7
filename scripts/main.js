@@ -4,7 +4,7 @@ Events.on(ClientLoadEvent, () => {
         if (p.mode === PlanetDialog.Mode.look) {
             p.fill(cons(t => {
                 t.top().left();
-                t.margin(10);
+                t.margin(30);
                 t.defaults().size(200, 54);
                 t.button("Redirect", Icon.upOpen, () => {
                     if (p.state.planet.equals(Planets.serpulo)) {
