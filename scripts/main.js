@@ -3,7 +3,7 @@ Events.on(ClientLoadEvent, () => {
     p.shown(() => {
         if (p.mode === PlanetDialog.Mode.look) {
             p.fill(cons(t => {
-                t.top(1).right();
+                t.top().right();
                 t.margin(10);
                 t.defaults().size(200, 54);
                 t.button("Redirect", Icon.upOpen, () => {
